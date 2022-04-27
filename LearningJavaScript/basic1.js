@@ -64,8 +64,11 @@ ________________________________________________________________________*/
 
 /*_____________________________________________________________________
 
-var: (function scoped) is old way to declare variables, before ES6
-let, const: (block scoped) introduced in ES6
+var: (function scoped => available everywhere in which function it is defined 
+    => if not defined in function => becomes global scoped &
+       var varibles can be redefined with the same name again)
+       is old way to declare variables, before ES6
+let, const: (block scoped, available only the blocks they are defined, like c,c++ variables) introduced in ES6
 (Difference b/w them is of scope of variables)
 
  === Strict equality operator(doesn't do Type Coercion / Conversion)
