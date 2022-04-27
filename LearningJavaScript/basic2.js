@@ -29,7 +29,7 @@ function fruitJuice(apple, orange) {
 
 // console.log(juice);  error
 
-const gotJuice = fruitJuice(5, 2);
+const gotJuice = fruitJuice(6, 9);
 console.log(gotJuice);
 
 console.log(fruitJuice(7, 1));

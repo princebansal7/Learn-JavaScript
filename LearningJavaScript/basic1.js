@@ -1,11 +1,27 @@
 /*_____________________________________________________________________
 
-var: (function scoped => available everywhere in which function it is defined 
-    => if not defined in function => becomes global scoped &
-       var varibles can be redefined with the same name again)
-       is old way to declare variables, before ES6
-let, const: (block scoped, available only the blocks they are defined, like c,c++ variables) introduced in ES6
-(Difference b/w them is of scope of variables)
+var:   1. function scoped => available everywhere in which function it is defined 
+    => 2. if not defined in function => becomes global scoped &
+          var varibles can be redefined with the same name again.
+       3. we can use 'var' defined variables before defining them.
+          example:
+                  console.log(x);
+                  var x;
+                (above program lines won't generate error, and shows x as undefined)
+      4. var is old way to declare variables, before ES6
+
+let, const: (block scoped, available only the blocks they are defined, like c,c++ variables) introduced in ES6.
+        NOTE:
+             const doesn't let us change the value of variable. But it allows to let us change the different properties
+             of const value.
+             eg: const obj = {name: "Prince"};
+                 obj.name = "Bansal"; // allowed 
+
+                 but 
+
+                 obj = 29; or obj = {val:"69"}; // ERROR
+                 
+Some other key Points:-
 
  === Strict equality operator(doesn't do Type Coercion / Conversion)
  == loose quality operator (do Type Coercion / Conversion)
