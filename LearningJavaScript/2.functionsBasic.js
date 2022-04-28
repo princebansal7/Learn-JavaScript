@@ -74,7 +74,7 @@ const getAge2 = function (birthYear) {
 
 // eg1: (One liner Arrow function)
 
-const getAge3 = (birthYear) => 2022 - birthYear;
+const getAge3 = (birthYear) => 2022 - birthYear;   // implicitally returns the value
 const age3 = getAge3(1990);
 
 console.log("Present age is: " + age3);
@@ -84,7 +84,7 @@ console.log("Present age is: " + age3);
 const yearUntilRetirement1 = (birthYear) => {
   const presenAage = 2022 - birthYear;
   const retireAge = 65 - presenAage;
-  return retireAge;
+  return retireAge;                       // we have to return the value using return => explicitally returns the value
 };
 
 const retirementYearLeft1 = yearUntilRetirement1(1990);
@@ -104,3 +104,51 @@ console.log(info);
 console.log(yearUntilRetirement2("Wolvrine", "bhaisab", 1980));
 
 _______________________________________________________________________________________*/
+
+/* __Reviewing functions and function calling other functions______________________________
+
+// this 'birthYear' is local to this getAge function and different from next function
+
+const getAge = function (birthYear) {
+  return 2022 - birthYear;
+};
+
+// this 'birthYear' is local to yearUntilRetirement function
+const yearUntilRetirement = function (birthYear) {
+  const presentAage = getAge(birthYear);
+  const retireAge = 65 - presentAage;
+
+  if (retireAge > 0) {
+    return retireAge;
+  }
+  console.log("Your Are Retired !");
+  return -1;
+};
+
+console.log(yearUntilRetirement(1949));
+
+_____________________________________________________________________*/
+
+//_________ Challenge-1 (Functions based)________________________________
+
+const calAvg = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+
+const checkWinner = function (avgDolphins, avgKoalas) {
+  if (avgDolphins > 2 * avgKoalas) {
+    console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`);
+  } else if (2 * avgDolphins < avgKoalas) {
+    console.log(`Koalas win (${avgDolphins} vs ${avgKoalas})`);
+  } else {
+    console.log(`No Team Wins... DRAW! (${avgDolphins} vs ${avgKoalas})`);
+  }
+};
+
+// TEST-1
+// let DolphonScore = calAvg(44, 23, 71);
+// let KoalaScore = calAvg(65, 54, 49);
+// checkWinner(DolphonScore, KoalaScore);
+
+//TEST-2
+DolphonScore = calAvg(85, 54, 41);
+KoalaScore = calAvg(23, 34, 27);
+checkWinner(DolphonScore, KoalaScore);
