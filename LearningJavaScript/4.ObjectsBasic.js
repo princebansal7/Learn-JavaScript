@@ -94,7 +94,8 @@ info["Insta"] = "@princebansal_";
 
 console.log(info);
 
-// CHALLENGE
+//-----------CHALLENGE-1--------------------------------------------------------
+
 // print: Prince has 4 friends, But his best friend is Rick.
 //    PS: Prince,4,Rick , you have to extract from info object !
 
@@ -109,6 +110,141 @@ console.log(
   `${info.fName} has ${info.friends.length}, But his Best Friend is ${info.friends[2]}`
 );
 
-*/
+
 
 //--------Object Methods------------------------------------------------------
+
+// We can use function expressions in Objects and they are called Methods
+// We can use function declaraion in Objects as they give error
+
+//EXAMPLE 1:
+const info1 = {
+  fName: "Prince",
+  lName: "Bansal",
+  birthYear: 1998,
+  Job: "Student",
+  friends: ["Moon Knight", "John", "Rick", "Morty"],
+  isDriven: true,
+  calAge: function (birthYear) {
+    // function's 'birthYear' is diffrent from object's birthyear property
+    return 2022 - birthYear;
+  },
+
+  // function calAge2(birthYear) { // ERROR
+  //   return 2022 - birthYear;
+  // },
+};
+
+// Accessing Objects Methods
+
+console.log(info1.calAge()); // gives NaN, as we have to pass a value too (because we are not accessing the object's birthYear property)
+console.log(info1.calAge(1991)); // using . (object info1 is calling the calAge method)
+console.log(info1["calAge"](2002)); // using []
+
+
+// EXAMPLE 2:
+// How to use Object's property inside Object method ?
+// JavaScript provides 'this', this is a keyword which points to that object itself
+
+const info2 = {
+  fName: "Prince",
+  lName: "Bansal",
+  birthYear: 1998,
+  Job: "Student",
+  friends: ["Moon Knight", "John", "Rick", "Morty"],
+  isDriven: true,
+  calAge: function () {
+    // console.log(this); // will print info2 object, because info2 object is calling calAge() method
+    return 2022 - this.birthYear;
+  },
+};
+
+console.log(info2.calAge());
+
+
+// EXAMPLE 3:
+// We can Store age after calling calAge() once, so that we don't have to excute function again and again
+
+const info3 = {
+  fName: "Prince",
+  lName: "Bansal",
+  birthYear: 1998,
+  Job: "Student",
+  friends: ["Moon Knight", "Morty"],
+  isDriven: true,
+  calAge: function () {
+    this.age = 2022 - this.birthYear; // we made new property age
+    return this.age;
+  },
+};
+
+console.log(info3.calAge());
+
+console.log(info3.age); // now we directly call that age property
+console.log(info3.age);
+console.log(info3.age);
+
+console.log(info3);
+
+
+//-----EXERCISE-------------------
+
+const info4 = {
+  fName: "Prince",
+  lName: "Bansal",
+  birthYear: 1998,
+  job: "Student",
+  friends: ["Moon Knight", "Morty"],
+  isDriven: true,
+  calAge: function () {
+    this.age = 2022 - this.birthYear;
+    return this.age;
+  },
+  getSummary: function () {
+    const summary = `
+    first name: ${this.fName},
+    last name: ${this.lName},
+    friends list: ${this.friends},
+    Birth year: ${this.birthYear},
+    Job Status: ${this.job},
+    Age: ${this.calAge()},
+    Knows How to Drive: ${this.isDriven}`;
+
+    return summary;
+  },
+};
+
+console.log(info4.getSummary());
+
+*/
+
+//-------CHALLANGE-2------------------------------------
+
+const marcInfo = {
+  name: "Marc Spectre",
+  mass: 78,
+  height: 1.69,
+  calBmi: function () {
+    this.BMI = this.mass / this.height ** 2;
+    return this.BMI;
+  },
+};
+
+const jackInfo = {
+  name: "Jack Lockley",
+  mass: 92,
+  height: 1.95,
+  calBmi: function () {
+    this.BMI = this.mass / this.height ** 2;
+    return this.BMI;
+  },
+};
+
+let ans;
+if (marcInfo.calBmi() > jackInfo.calBmi()) {
+  ans = `${marcInfo.name}'s (${marcInfo.BMI}) is higher than  ${jackInfo.name}'s (${jackInfo.BMI}) !`;
+} else {
+  ans = `${jackInfo.name}'s (${jackInfo.BMI}) is higher than  ${marcInfo.name}'s (${marcInfo.BMI}) !`;
+}
+
+console.log(ans);
