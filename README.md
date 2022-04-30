@@ -4,9 +4,9 @@
 
 1. To Check Node js Versions via `nvm`:
 
-```
-nvm list-remote
-```
+   ```
+   nvm list-remote
+   ```
 
 2. To install Node js from listed versions:
 
