@@ -1,4 +1,4 @@
-"using strict";
+'using strict';
 //----------JavaSrcipt Loops---------------------------------------------------
 
 /*          for Loop
@@ -143,7 +143,7 @@ const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 const tips = [];
 const totals = [];
 
-const calTip = (bill) =>
+const calTip = bill =>
   bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100;
 
 for (let i = 0; i < bills.length; i++) {
@@ -151,9 +151,9 @@ for (let i = 0; i < bills.length; i++) {
   totals.push(bills[i] + tips[i]);
 }
 
-console.log("Bills: " + bills);
-console.log("Tips: " + tips);
-console.log("Totals: " + totals);
+console.log('Bills: ' + bills);
+console.log('Tips: ' + tips);
+console.log('Totals: ' + totals);
 
 // ---BONUS EXERCISE-----------------------
 
