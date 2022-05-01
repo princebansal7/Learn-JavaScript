@@ -1,6 +1,6 @@
 # Learning JavaScript
 
-#### a. Ubuntu `nvm` commnads for **Node js**
+#### Ubuntu `nvm` commnads for **Node js**
 
 1.  To Check all node js Versions via `nvm`:
 
@@ -48,7 +48,7 @@
     node --version
     ```
 
-#### b. Using Chrome Debugger for JS script steps:
+#### Using Chrome Debugger for JS script steps:
 
 1. Right click on Web page > click `Inspect`
 2. Go to `sources`
