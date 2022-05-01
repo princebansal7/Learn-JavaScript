@@ -1,4 +1,4 @@
-"using strict";
+'use strict';
 
 /*  using Strict mode (No code except comments is allowed before it else won't activate)
     helps in wrting secure code which prevent bugs

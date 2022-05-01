@@ -1,4 +1,4 @@
-"using strict";
+'use strict';
 /*
 const friend1 = "Steven Grant";
 const friend2 = "Marc";
@@ -108,6 +108,10 @@ const friends = ["Steven Grant", "Marc", "Moon Knight"];
 // 1.push(arg) : inserts value at the end, and also returns length
 
 friends.push("Elon Musk");
+
+// can push multiple items too.
+friends.push('Jai','ho','pinku');
+
 let newLength = friends.push("Sherlock");
 console.log(friends);
 console.log(newLength);
@@ -174,7 +178,7 @@ if (friends.includes("Moon Knight")) {
 
 //                or
 
-const calTip = (bill) =>
+const calTip = bill =>
   bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100;
 
 const bill = [125, 555, 44];

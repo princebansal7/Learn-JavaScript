@@ -1,4 +1,4 @@
-"using strict";
+'use strict';
 
 /*
 ------Array Example-----------------------
@@ -29,6 +29,7 @@ const infoObj = {
   friends: ["Moon Knight", "John", "Rick", "Morty"],
 };
 console.log(infoObj);
+console.table(infoObj); // nicely formatted table of object
 
 console.log();
 
@@ -221,7 +222,7 @@ console.log(info4.getSummary());
 //-------CHALLANGE-2------------------------------------
 
 const marcInfo = {
-  name: "Marc Spectre",
+  name: 'Marc Spectre',
   mass: 78,
   height: 1.69,
   calBmi: function () {
@@ -231,7 +232,7 @@ const marcInfo = {
 };
 
 const jackInfo = {
-  name: "Jack Lockley",
+  name: 'Jack Lockley',
   mass: 92,
   height: 1.95,
   calBmi: function () {
