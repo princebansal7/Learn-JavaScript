@@ -4,8 +4,7 @@
     helps in wrting secure code which prevent bugs
     => 1. forbids us to do certain things in Code.
        2. Creates visible errors in developer's console (very helpful in debugging)
-       3. shows error if we use future reserved words (acc to strict mode) as variables eg: interface, private etc
-       4. 
+       3. Shows error if we use future reserved words (acc to strict mode) as variables eg: interface, private etc
 */
 
 // FUNCTIONS---------------------------------------------------------------------------------------------------------------
@@ -38,7 +37,7 @@ __________________________________________________*/
 
 /*_____TYPE-3_____________________________________________________
 
-// Function Declaration (=> function can be called before declaring)
+// Function Declaration (-> function can be called before declaring)
 
 function getAge(birthYear) {
   return 2022 - birthYear;
@@ -46,7 +45,7 @@ function getAge(birthYear) {
 const age1 = getAge(1998);
 console.log(age1);
 
-// Anonymous Function (function without name) or Function Expression (they can be called after writing function expression   )
+// Anonymous Function (function without name) or Function Expression (they can be called after writing function expression)
 
 const getAge2 = function (birthYear) {
   return 2022 - birthYear;
@@ -74,7 +73,7 @@ const getAge2 = function (birthYear) {
 
 // eg1: (One liner Arrow function)
 
-const getAge3 = (birthYear) => 2022 - birthYear;   // implicitally returns the value
+const getAge3 = birthYear => 2022 - birthYear;   // implicitally returns the value, for 1 argument , no need to write it in paranthesis
 const age3 = getAge3(1990);
 
 console.log("Present age is: " + age3);
