@@ -2,7 +2,7 @@
 
 ### Ubuntu `nvm` commnads for **Node js**
 
-1.  To Check node js Versions via `nvm`:
+1.  To Check all node js Versions via `nvm`:
 
     ```
     nvm list-remote
