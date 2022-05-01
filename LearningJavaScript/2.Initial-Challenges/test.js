@@ -5,13 +5,13 @@
 const temperature = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
 
 const getAmplitude = function (temperature) {
-  let max = temperature[0];
-  let min = temperature[0];
+  let max = 0;
+  let min = 0; // bug
   for (let i = 1; i < temperature.length; i++) {
     if (temperature[i] === 'error') {
       continue;
     }
-
+    debugger; // debugger statement added
     if (max < temperature[i]) {
       max = temperature[i];
     }
