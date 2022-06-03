@@ -1,6 +1,8 @@
 # Learning JavaScript
 
-### Ubuntu `nvm` commnads for **Node js**
+#### PS: `nvm` (_node version manager_) should be installed on your OS for below commands.
+
+### Ubuntu/Windows `nvm` commnads for **Node js**
 
 - To Check all node js Versions via `nvm`:
 
