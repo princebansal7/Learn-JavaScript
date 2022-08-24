@@ -77,6 +77,7 @@
 <blockquote>
   <details>
    <summary>Guess The Number [<a href="/3.DOM-BasicProjects/1.GuessMyNumber/" target="_blank"> Project-1 </a> ]</summary>
+   <br>
      <img alt="sample-image" src="/3.DOM-BasicProjects/1.GuessMyNumber/img/1.png">
      <img alt="sample-image" src="/3.DOM-BasicProjects/1.GuessMyNumber/img/2.png">
      <img alt="sample-image" src="/3.DOM-BasicProjects/1.GuessMyNumber/img/3.png">
