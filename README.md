@@ -74,6 +74,7 @@
 
 <details>
 <summary>Projects</summary>
+<br>
 <blockquote>
   <details>
    <summary>Guess The Number [<a href="/3.DOM-BasicProjects/1.GuessMyNumber/" target="_blank"> Project-1 </a> ]</summary>
