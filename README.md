@@ -2,7 +2,10 @@
 
 #### PS: `nvm` (_node version manager_) should be installed on your OS for below commands.
 
-### Ubuntu/Windows `nvm` commnads for **Node js**
+<details>
+<summary> Steps to install NodeJs </summary>
+
+#### Ubuntu/Windows `nvm` commnads for **Node js**
 
 - To Check all node js Versions via `nvm`:
 
@@ -49,8 +52,12 @@
   ```
   node --version
   ```
+  </details>
 
-### Using Chrome Debugger for JS script steps:
+<details>
+<summary>Steps to use Chrome debugger</summary>
+
+#### Using Chrome Debugger for JS script steps:
 
 ##### WAY-1:
 
@@ -62,3 +69,24 @@
 ##### WAY-2:
 
 - Simply add `debugger;` statement in your js code. it will automatilly call browser's debugger tab from the line where you've added the `debugger;` statement.
+
+</details>
+
+<details>
+<summary>Projects</summary>
+<blockquote>
+  <details>
+   <summary>Guess The Number [<a href="/3.DOM-BasicProjects/1.GuessMyNumber/" target="_blank"> Project-1 </a> ]</summary>
+     <img alt="sample-image" src="/3.DOM-BasicProjects/1.GuessMyNumber/img/1.png">
+     <img alt="sample-image" src="/3.DOM-BasicProjects/1.GuessMyNumber/img/2.png">
+     <img alt="sample-image" src="/3.DOM-BasicProjects/1.GuessMyNumber/img/3.png">
+     <img alt="sample-image" src="/3.DOM-BasicProjects/1.GuessMyNumber/img/4.png">
+     <img alt="sample-image" src="/3.DOM-BasicProjects/1.GuessMyNumber/img/5.png">
+     <img alt="sample-image" src="/3.DOM-BasicProjects/1.GuessMyNumber/img/6.png">
+     <img alt="sample-image" src="/3.DOM-BasicProjects/1.GuessMyNumber/img/7.png">
+     <img alt="sample-image" src="/3.DOM-BasicProjects/1.GuessMyNumber/img/8.png">
+     <img alt="sample-image" src="/3.DOM-BasicProjects/1.GuessMyNumber/img/9.png">
+  </details>
+
+</blockquote>
+</details>
