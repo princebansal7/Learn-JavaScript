@@ -85,7 +85,6 @@
      <img alt="sample-image" src="/3.DOM-BasicProjects/1.GuessMyNumber/img/6.png">
      <img alt="sample-image" src="/3.DOM-BasicProjects/1.GuessMyNumber/img/7.png">
      <img alt="sample-image" src="/3.DOM-BasicProjects/1.GuessMyNumber/img/8.png">
-     <img alt="sample-image" src="/3.DOM-BasicProjects/1.GuessMyNumber/img/9.png">
   </details>
 
 </blockquote>
