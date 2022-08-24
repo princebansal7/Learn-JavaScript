@@ -61,6 +61,7 @@ console.log(typeof salary);
 console.log(typeof sarcastic);
 
 // Array of Array-------------------------------------
+
 const arrayMix = ["hello", info, 69 + 0];
 console.log(arrayMix);
 console.log(arrayMix.length);
@@ -130,7 +131,7 @@ newLength = friends.pop();
 console.log(friends);
 console.log(newLength);
 
-//4. shift() :  removes element from the beginning, and it returns the removed element
+// 4. shift() :  removes element from the beginning, and it returns the removed element
 
 friends.shift();
 console.log(friends);
@@ -138,7 +139,8 @@ newLength = friends.shift();
 console.log(friends);
 console.log(newLength);
 
-//5.indexOf(arg) : returns the index of passed argument if present in array, else returns -1 if not present
+// 5. indexOf(arg) : returns the index of passed argument if present in array, else returns
+//   -1 if not present
 
 let index = friends.indexOf("Moon Knight"); // present at index 1 (as 0 based indexing)
 console.log(index);
@@ -158,9 +160,10 @@ console.log(friends.indexOf("23")); // -1
 console.log(friends.includes(23)); // true
 console.log(friends.includes("23")); // we are searching 23 of type string => return false
 
-//=> helful in conditional statements
+// => helful in conditional statements
 
 //eg:
+
 if (friends.includes("Moon Knight")) {
   console.log("You are protector of Night Travelers");
 } else {
@@ -171,20 +174,20 @@ if (friends.includes("Moon Knight")) {
 
 // CHALLENGE (Based on Arrays)------------------------------------------------
 
-// const calTip = function (bill) {
-//   let tip = bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100;
-//   return tip;
-// };
+const calTip1 = function (bill) {
+  let tip = bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100;
+  return tip;
+};
 
 //                or
 
-const calTip = bill =>
+const calTip2 = bill =>
   bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100;
 
 const bill = [125, 555, 44];
 console.log(bill);
 
-const tip = [calTip(bill[0]), calTip(bill[1]), calTip(bill[2])];
+const tip = [calTip2(bill[0]), calTip2(bill[1]), calTip2(bill[2])];
 console.log(tip);
 
 // const total = bill + tip;  Useless, as treats as strings and concatenates

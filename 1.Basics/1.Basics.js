@@ -10,9 +10,11 @@ var:   1. function scoped => available everywhere in which function it is define
                 (above program lines won't generate error, and shows x as undefined)
       4. var is old way to declare variables, before ES6
 
-let, const: (block scoped, available only the blocks they are defined, like c,c++ variables) introduced in ES6.
+let, const: (block scoped, available only the blocks they are defined, like c,c++ variables) introduced
+            in ES6.
         NOTE:
-             const doesn't let us change the value of variable. But it allows to let us change the different properties
+             const doesn't let us change the value of variable. But it allows to let us change the
+             different properties
              of const value.
              eg: const obj = {name: "Prince"};
                  obj.name = "Bansal"; // allowed 

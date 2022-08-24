@@ -35,9 +35,9 @@ console.log();
 
 const typesArray = [];
 for (let i = 0; i < info.length; i++) {
-  // filling typesArray
+  //   filling typesArray
   //   typesArray[i] = typeof info[i]; // WAY-1
-  typesArray.push(typeof info[i]); // WAY-2
+  typesArray.push(typeof info[i]);     // WAY-2
 }
 
 console.log(typesArray);
@@ -102,7 +102,6 @@ const info2 = [
 for (let i = info2.length - 1; i >= 0; i--) {
   console.log(i, info2[i]);
 }
-
 
 
 //------Loop inside Loop (Nested Loops)--------------------

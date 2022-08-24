@@ -4,10 +4,11 @@
     helps in wrting secure code which prevent bugs
     => 1. forbids us to do certain things in Code.
        2. Creates visible errors in developer's console (very helpful in debugging)
-       3. Shows error if we use future reserved words (acc to strict mode) as variables eg: interface, private etc
+       3. Shows error if we use future reserved words (acc to strict mode) as variables
+          eg: interface, private etc
 */
 
-// FUNCTIONS---------------------------------------------------------------------------------------------------------------
+// FUNCTIONS---------------------------------------------------------------------------------
 
 /*____Type-1____________
 
@@ -26,7 +27,7 @@ function fruitJuice(apple, orange) {
   return juice;
 }
 
-// console.log(juice);  error
+// console.log(juice);  // error
 
 const gotJuice = fruitJuice(6, 9);
 console.log(gotJuice);
@@ -45,7 +46,8 @@ function getAge(birthYear) {
 const age1 = getAge(1998);
 console.log(age1);
 
-// Anonymous Function (function without name) or Function Expression (they can be called after writing function expression)
+// Anonymous Function (function without name) or Function Expression (they only can be called
+// after writing function expression)
 
 const getAge2 = function (birthYear) {
   return 2022 - birthYear;
@@ -53,7 +55,8 @@ const getAge2 = function (birthYear) {
 const age2 = getAge2(2000);
 console.log(age2);
 
-//(above diffrence we saw b/w function declaration and expression happens due to "Hoisting", we'll learn later)
+// (above diffrence we saw between 'function declaration' and 'function expression' happens due to
+// "Hoisting", we'll learn later)
 
 __________________________________________________________________*/
 
@@ -62,7 +65,7 @@ __________________________________________________________________*/
 //  1. Arrow Function (shorter way to write Function Expression)
 //  2. Arrow function do not get 'this' keyword (we'll learn Later)
 
-// Function Expression (just to relate with Arrow functions)
+// below I wrote 'Function Expression' (just to relate with Arrow functions)
 
 const getAge2 = function (birthYear) {
   return 2022 - birthYear;
@@ -73,19 +76,23 @@ const getAge2 = function (birthYear) {
 
 // eg1: (One liner Arrow function)
 
-const getAge3 = birthYear => 2022 - birthYear;   // implicitally returns the value, for 1 argument , no need to write it in paranthesis
-const age3 = getAge3(1990);
+// implicitally returns the value for 1 argument , no need to write it in paranthesis on argument
+// when only 1 argument is passed
 
+const getAge3 = birthYear => 2022 - birthYear;   
+const age3 = getAge3(1990);
 console.log("Present age is: " + age3);
 
-//eg2: (Multiple liner Arraow function)
+
+// eg2: (Multiple liner Arrow function)
+
+// we have to return the value using return => explicitally returns the value
 
 const yearUntilRetirement1 = (birthYear) => {
   const presenAage = 2022 - birthYear;
   const retireAge = 65 - presenAage;
-  return retireAge;                       // we have to return the value using return => explicitally returns the value
+  return retireAge;                       
 };
-
 const retirementYearLeft1 = yearUntilRetirement1(1990);
 console.log("Years left till retirement: " + retirementYearLeft1);
 
@@ -113,6 +120,7 @@ const getAge = function (birthYear) {
 };
 
 // this 'birthYear' is local to yearUntilRetirement function
+
 const yearUntilRetirement = function (birthYear) {
   const presentAage = getAge(birthYear);
   const retireAge = 65 - presentAage;

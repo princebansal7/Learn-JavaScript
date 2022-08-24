@@ -10,7 +10,8 @@ const infoArray = [
   "Student",
   ["Moon Knight", "John", "Rick", "Morty"],
 ];
-// we can just array elememts by index number and not by some name.
+
+// we can identify array elememts by index number and not by some name.
 
 
 
@@ -21,6 +22,7 @@ const infoArray = [
 // 3. Order of values doesn't matter when we are retrieving them unlike arrays
 
 // infoObj have 5 properties or keys
+
 const infoObj = {
   fName: "Prince",
   lName: "Bansal",
@@ -33,7 +35,7 @@ console.table(infoObj); // nicely formatted table of object
 
 console.log();
 
-// Retrieving data from object using .
+// Retrieving data from object using dot .
 console.log(infoObj.fName);
 console.log(infoObj.lName);
 console.log(infoObj.age);
@@ -42,7 +44,8 @@ console.log(infoObj.friends);
 
 console.log();
 
-// Retrieving data from object using [] : here in [], we can use expressions too, which eventaully equals to keys
+// Retrieving data from object using [] : here in [], we can use expressions too, 
+// which eventaully equals to keys
 
 console.log(infoObj["fName"]);
 console.log(infoObj["lName"]);
@@ -119,6 +122,7 @@ console.log(
 // We can use function declaraion in Objects as they give error
 
 //EXAMPLE 1:
+
 const info1 = {
   fName: "Prince",
   lName: "Bansal",
