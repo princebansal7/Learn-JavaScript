@@ -1,4 +1,6 @@
 /*_____________________________________________________________________
+PS: I learned all this from a udemy course and various YT videos
+
 
 var:   1. function scoped => available everywhere in which function it is defined 
     => 2. if not defined in function => becomes global scoped &
