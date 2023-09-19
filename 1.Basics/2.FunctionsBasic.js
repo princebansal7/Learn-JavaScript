@@ -27,7 +27,7 @@ function fruitJuice(apple, orange) {
   return juice;
 }
 
-// console.log(juice);  // error
+// console.log(juice);  // error, as juice variable is inside the function
 
 const gotJuice = fruitJuice(6, 9);
 console.log(gotJuice);
@@ -38,7 +38,7 @@ __________________________________________________*/
 
 /*_____TYPE-3_____________________________________________________
 
-// Function Declaration (-> function can be called before declaring)
+// Function Declaration (function can be called before declaring)
 
 function getAge(birthYear) {
   return 2022 - birthYear;
@@ -46,17 +46,15 @@ function getAge(birthYear) {
 const age1 = getAge(1998);
 console.log(age1);
 
-// Anonymous Function (function without name) or Function Expression (they only can be called
-// after writing function expression)
+// Anonymous Function (function without name) or Function Expression (they only can be called after writing function expression)
 
 const getAge2 = function (birthYear) {
   return 2022 - birthYear;
 };
-const age2 = getAge2(2000);
+const age2 = getAge2(2000); // **when calling, have to pass arguments too
 console.log(age2);
 
-// (above diffrence we saw between 'function declaration' and 'function expression' happens due to
-// "Hoisting", we'll learn later)
+// (above diffrence we saw between 'function declaration' and 'function expression' happens due to "Hoisting", we'll learn later)
 
 __________________________________________________________________*/
 
@@ -71,22 +69,17 @@ const getAge2 = function (birthYear) {
   return 2022 - birthYear;
 };
 
-
 //EXAMPLES:
-
 // eg1: (One liner Arrow function)
-
-// implicitally returns the value for 1 argument , no need to write it in paranthesis on argument
-// when only 1 argument is passed
+// implicitally returns the value for 1 argument , no need to write it in paranthesis on argument when only 1 argument is passed
 
 const getAge3 = birthYear => 2022 - birthYear;   
-const age3 = getAge3(1990);
+const age3 = getAge3(1990); // when calling, have to pass arguments too
 console.log("Present age is: " + age3);
 
 
 // eg2: (Multiple liner Arrow function)
-
-// we have to return the value using return => explicitally returns the value
+// we have to return the value using return => explicitally returns the value, and also have to write function code in curly braces
 
 const yearUntilRetirement1 = (birthYear) => {
   const presenAage = 2022 - birthYear;
@@ -104,7 +97,7 @@ const yearUntilRetirement2 = (firstName, lastName, birthYear) => {
   return `Hello ${firstName} ${lastName}, years until retirement left: ${retireAge}`;
 };
 
-const info = yearUntilRetirement2("Prince", "Bansal", 1998);
+const info = yearUntilRetirement2("Prince", "Bansal", 1998); // when calling, have to pass arguments too
 console.log(info);
 
 console.log(yearUntilRetirement2("Wolvrine", "bhaisab", 1980));
