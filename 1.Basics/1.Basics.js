@@ -1,9 +1,8 @@
 /*_____________________________________________________________________
-PS: I learned all this from a udemy course and various YT videos
 
 
 var:   1. function scoped => available everywhere in which function it is defined 
-    => 2. if not defined in function => becomes global scoped &
+       2. if not defined in function => becomes global scoped &
           var varibles can be redefined with the same name again.
        3. we can use 'var' defined variables before defining them.
           example:
