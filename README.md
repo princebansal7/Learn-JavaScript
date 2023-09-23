@@ -1,11 +1,13 @@
 # Learning JavaScript
 
-#### PS: `nvm` (_node version manager_) should be installed on your OS for below commands.
+To learn **JS ECMAScript 6** (European Computer Manufactures Association) in detail: <a href="https://github.com/princebansal7/Web-Dev-Basics/tree/main/ES6-JS">Click Here</a>
+
+#### PS: `nvm` (_node version manager_) must be installed on your system for below commands.
 
 <details>
 <summary> Steps to install NodeJs </summary>
 
-#### Ubuntu/Windows `nvm` commnads for **Node js**
+#### `nvm` commnads for **Node js**
 
 - To Check all node js Versions via `nvm`:
 
